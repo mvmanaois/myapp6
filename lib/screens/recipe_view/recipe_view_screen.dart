@@ -3,10 +3,9 @@ import 'package:gap/gap.dart';
 import 'package:myapp/models/recipe.dart';
 
 class RecipeViewScreen extends StatelessWidget {
-  RecipeViewScreen({Key? key, required this.recipe}) : super(key: key);
-
   final Recipe recipe;
-  
+
+  RecipeViewScreen({Key? key, required this.recipe}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +16,7 @@ class RecipeViewScreen extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: Text(recipe.name),
-           backgroundColor: Colors.red,
+          backgroundColor: Colors.orange,
         ),
         body: Column(
           children: [
